@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ctf-8"></meta>
+        <link rel="icon" href="Home.ico" type="image/x-icon"></link>
+        <link rel="shortcut icon" href="Home.ico" type="image/x-icon"></link>
+        <title>Creeper BOT</title>
+        <style type="text/css">
+            @font-face {
+            font-family: font1;
+            src: url(jf-openhuninn-1.1.ttf);
+            }
+            .body{
+                background-color: skyblue;
+                margin: 0px;
+                font-family: font1;
+            }
+            .img1{
+                display: block;
+            }
+            .div1{
+                font-family: font1;
+                text-align: center;
+                background-color: #0d0057;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .button{
+                font-family: font1;
+                width: 130px;
+                height: 40px;
+                font-size: 20px;
+                background-color: #0d0057;
+                border: 2px solid #fdeca6;
+                border-radius: 22px;
+                color: white;
+                cursor: pointer;
+                outline: none;
+            }
+                .button:hover{
+                    background-color: #fdeca6;
+                    color: black;
+                    transition: 0.5s;
+                }
+            @media screen and (max-width: 600px){
+                .div1{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body class="body">
+        <img class="img1" src="Home.jpg" ></img>
+        <div class="div1">
+            <button id="but1" class="button">首頁</button>
+            <button id="but2" class="button">作者介紹</button>
+            <button id="but3" class="button">指令介紹</button>
+            <button id="but4" class="button">製作團隊</button>
+            <button id="but5" class="button">DISCORD群</button>
+            <button id="but6" class="button">邀請BOT</button>
+        </div>
+        <div id="123">
+            <h3>歡迎使用Creeper BOT!!</h3>
+        </div>
+        <script type="text/javascript">
+            document.getElementById("but1").onclick = function() {
+                document.getElementById("123").innerHTML="<h3>首頁</h3>"
+            }
+            document.getElementById("but2").onclick = function() {
+                document.getElementById("123").innerHTML="<h3>作者介紹</h3>"
+            }
+            document.getElementById("but3").onclick = function() {
+                document.getElementById("123").innerHTML="<h3>指令介紹</h3>"
+            }
+            document.getElementById("but4").onclick = function() {
+                document.getElementById("123").innerHTML="<h3>製作團隊</h3>"
+            }
+            document.getElementById("but5").onclick = function() {
+                document.getElementById("123").innerHTML="<h3>Discord群</h3>"
+            }
+            document.getElementById("but6").onclick = function() {
+                document.getElementById("123").innerHTML="<h3>邀請BOT</h3>"
+            }
+        </script>
+    </body>
+</html>
